@@ -20,11 +20,8 @@ attractions = [[] for destination in destinations]
 print(attractions)
 
 def add_attraction(destination, attraction):
-  try:
     destination_index = get_destination_index(destination)
-    attarctions_for_destination = attractions[destination_index].append(attraction)
-  except ValueError:
-    return
+    attractions_for_destination = attractions[destination_index].append(attraction)
 
 
 add_attraction("Los Angeles, USA", ['Venice Beach', ['beach']])
